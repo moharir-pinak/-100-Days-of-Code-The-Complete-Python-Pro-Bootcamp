@@ -125,7 +125,8 @@ while at_goal() != True :
 
 Final Challenge code  :
 link : https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json
-
+there is an edge case debug it when got time 
+code in the zip file provided or even the problem_world are the files in the zip use them to start debugging 
 def turn_right():
     turn_left()
     turn_left()
