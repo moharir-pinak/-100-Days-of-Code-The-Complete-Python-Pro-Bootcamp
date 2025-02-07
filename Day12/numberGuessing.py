@@ -14,10 +14,7 @@ def easy(n):
         else:
             print("you lose")
             game_over = True
-    
-
-        
-    
+               
 def hard (n):
     global hard_chances
     global game_over
@@ -35,7 +32,7 @@ def compare(n):
     global hard_chances
     global game_over
     
-    guess = int(input("Enter yout guess: "))
+    guess = int(input("Enter your guess: "))
     if guess > n :
         print("Too high")
     elif guess<n:
@@ -44,14 +41,15 @@ def compare(n):
         print("You Won")
         game_over = True
     
-
-print(art.logo)
-print("Welcome to Guessing game ")
-difficulty = input("Enter difficulty in which You would Like to play : Easy , Medium , Hard :\n").lower()
-n = random.randint(1,100)
-# print(n)
-if difficulty == "easy":
-    easy(n)
-elif difficulty == "hard":
-    hard(n)
-  
+def play():
+    print(art.logo)
+    print("Welcome to Guessing game ")
+    difficulty = input("Enter difficulty in which You would Like to play : Easy , Hard :\n").lower()
+    n = random.randint(1,100)
+    # print(n)
+    if difficulty == "easy":
+        easy(n)
+    elif difficulty == "hard":
+        hard(n)
+play()
+    
