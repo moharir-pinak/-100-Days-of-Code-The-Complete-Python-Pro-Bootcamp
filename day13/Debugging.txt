@@ -1,0 +1,12 @@
+1st Method 
+    Describe the problem
+2nd Method 
+    Reproduce the bug
+3rd Method
+    Act like a computer and Go through each line 
+4th Method 
+    Watch red lines and fix the errors 
+5th Method  
+    Use print statement to fix the bugs 
+6th Method 
+    Use the debugger 
