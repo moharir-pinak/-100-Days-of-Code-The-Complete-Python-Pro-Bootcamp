@@ -26,6 +26,7 @@ for i in range (0,6):
     all_turtle.append(new_turtle)
 
 if user_input:
+    
     is_race = True
     
     

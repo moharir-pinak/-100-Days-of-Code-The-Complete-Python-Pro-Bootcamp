@@ -8,7 +8,6 @@ screen = Screen()
 
 def m_forward():
     chima.fd(15)
-    
 
 def m_backward():
     chima.fd(-15)
