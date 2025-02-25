@@ -40,4 +40,13 @@ while game_is_on :
         score.game_over()
         
         
+    # Colliosion of snakes head with its own tail
+    for segment in snake.segments:
+        if segment == snake.head:
+            pass
+        
+        elif snake.head.distance(segment) < 10:
+            game_is_on = False
+            score.game_over()     
+        
 screen.exitonclick()
