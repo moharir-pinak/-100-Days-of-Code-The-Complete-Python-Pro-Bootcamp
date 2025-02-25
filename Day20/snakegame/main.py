@@ -41,11 +41,11 @@ while game_is_on :
         
         
     # Colliosion of snakes head with its own tail
-    for segment in snake.segments:
-        if segment == snake.head:
-            pass
+    for segment in snake.segments[1:]:
+        # if segment == snake.head: #Insted of this if statement we will me slicing the given segments so that it starts for loop after the head
+        #     pass
         
-        elif snake.head.distance(segment) < 10:
+        if snake.head.distance(segment) < 10:
             game_is_on = False
             score.game_over()     
         
